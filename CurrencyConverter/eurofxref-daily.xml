@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gesmes:Envelope xmlns:gesmes="http://www.gesmes.org/xml/2002-08-01" xmlns="http://www.ecb.int/vocabulary/2002-08-01/eurofxref">
+	<gesmes:subject>Reference rates</gesmes:subject>
+	<gesmes:Sender>
+		<gesmes:name>European Central Bank</gesmes:name>
+	</gesmes:Sender>
+	<Cube>
+		<Cube time='2019-10-15'>
+			<Curr currency='USD' rate='1.1007'/>
+			<Curr currency='JPY' rate='119.23'/>
+			<Curr currency='BGN' rate='1.9558'/>
+			<Curr currency='CZK' rate='25.820'/>
+			<Curr currency='DKK' rate='7.4699'/>
+			<Curr currency='GBP' rate='0.87058'/>
+			<Curr currency='HUF' rate='332.38'/>
+			<Curr currency='PLN' rate='4.2956'/>
+			<Curr currency='RON' rate='4.7538'/>
+			<Curr currency='SEK' rate='10.8225'/>
+			<Curr currency='CHF' rate='1.0977'/>
+			<Curr currency='ISK' rate='138.30'/>
+			<Curr currency='NOK' rate='10.0653'/>
+			<Curr currency='HRK' rate='7.4353'/>
+			<Curr currency='RUB' rate='70.9456'/>
+			<Curr currency='TRY' rate='6.4678'/>
+			<Curr currency='AUD' rate='1.6293'/>
+			<Curr currency='BRL' rate='4.5467'/>
+			<Curr currency='CAD' rate='1.4562'/>
+			<Curr currency='CNY' rate='7.7943'/>
+			<Curr currency='HKD' rate='8.6351'/>
+			<Curr currency='IDR' rate='15591.42'/>
+			<Curr currency='ILS' rate='3.8784'/>
+			<Curr currency='INR' rate='78.6960'/>
+			<Curr currency='KRW' rate='1305.51'/>
+			<Curr currency='MXN' rate='21.1647'/>
+			<Curr currency='MYR' rate='4.6125'/>
+			<Curr currency='NZD' rate='1.7551'/>
+			<Curr currency='PHP' rate='56.829'/>
+			<Curr currency='SGD' rate='1.5088'/>
+			<Curr currency='THB' rate='33.434'/>
+			<Curr currency='ZAR' rate='16.3590'/>
+		</Cube>
+	</Cube>
+</gesmes:Envelope>

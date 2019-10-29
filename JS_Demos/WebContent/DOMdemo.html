@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DOM Applications</title>
+ <script> 
+
+ function changeParagraph(){ 
+ var b = document.getElementById("bestparagraph"); 
+ b.innerHTML="Hi world!<br/><br/>Hi again!"; 
+ document.getElementById("switchButton").onclick = changeParagraph2; 
+ } 
+
+ function changeParagraph2(){ 
+  var b = document.getElementById("bestparagraph"); 
+  document.bgColor='#caff95';
+  b.innerHTML="This is the best paragraph in the document. It is the best because it doesn't contain any words that have the letter 'e'. If you think it is impossible, load me and find out!"; 
+  document.getElementById("switchButton").onclick = changeParagraph; 
+
+ } 
+
+ function init(){ 
+	
+	  changeParagraph();   
+	 } 
+
+	 window.onload = init;  
+
+ </script> 
+</head>
+<body>
+ <p id="bestparagraph">This is the best paragraph in the document. It is the best because it  doesn't contain any words that have the letter 'e'. If you think it is impossible, load me and 
+ find out!</p> 
+ <!--<script> init(); </script>--> 
+<input id="switchButton" type="button" value="Switch" onclick="changeParagraph();"/> 
+<p>Told you so</p> 
+</body>
+</html>
+
+

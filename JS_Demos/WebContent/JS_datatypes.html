@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>JavaScript DataTypes</title>
+</head>
+<body>
+	<h1>JS DataTypes</h1>
+	<script>
+		var magazine = "New Era";
+		console.log(magazine);
+		document.writeln("<br/>The magazine name is: " + magazine
+				+ "--> is a String variable");
+		var nop = 10;
+		var cost_price = 2.00;
+		var dispatch_status = true;
+		document.writeln("<br/>Number of pages is: " + nop);
+		document.writeln("<br/>Price of the magazine is: " + cost_price);
+		document.writeln("<br/>Dispatched (true/False): " + status());
+
+		function status() {
+			return dispatch_status;
+		}
+	</script>
+	<h1>Implicit Type conversions</h1>
+	<script>
+		document.writeln("<br/>Cost of 2 magazines: " + cost_price * 2);
+		document.writeln("<br/>Cost of 4 magazines: " + cost_price + cost_price
+				+ cost_price + cost_price); // = 21   
+		document.writeln("<br/><b>Number<-String</b><br />");
+		document.writeln(cost_price + cost_price + +"2.00");
+		document.writeln("<br/><b>String<-Number</b><br />");
+		document.writeln("2.00" + 2.00 + 2.00);
+		document.writeln("<br/>");
+		/* The unary operator + can be used to convert 
+		a string to a number  
+		 */
+
+		var myStr = "3";
+		document.writeln(typeof myStr);
+		document.writeln("<br/>");
+
+		var myNum = 7;
+		myNum = +myStr;
+		document.writeln(typeof myNum);
+		document.writeln("<br/>");
+		document.writeln(myNum);
+		document.writeln("<br/>");
+		document.writeln(typeof myStr);
+		document.writeln("<br/>");
+
+		/* Type conversion rules are not always intuitive: 
+		Number to a string-> String
+		String to a Number-> Number
+		 */
+
+		document.writeln("5" + 2); // = 52 
+		document.writeln("<br/>");
+		document.writeln("5" - 2); // = 3 
+		document.writeln("<br/>");
+		document.writeln("5" * "2"); // = 10 
+
+		document.writeln("<br/>");
+	</script>
+</body>
+</html>

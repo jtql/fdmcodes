@@ -1,0 +1,29 @@
+<!DOCTYPE HTML> 
+<html> 
+  <head> 
+  </head> 
+  <body> 
+
+<p>Click the button to remove the event handler.</p>
+
+<button onclick="removeHandler()">Try it</button>
+
+<p id="demo"></p>
+<script>
+
+document.addEventListener("mousemove", alertusers);
+
+function alertusers() 
+	{ 
+		document.getElementById("demo").innerHTML = Math.random();
+	}
+function removeHandler() 
+	{
+  		document.removeEventListener("mousemove", alertusers);
+		window.alert("Removed Mouse Move Event Handler");
+	}
+</script>
+
+  </body> 
+
+</html> 

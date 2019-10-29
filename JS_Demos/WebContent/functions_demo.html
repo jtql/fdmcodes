@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+/* DEMO 5 Functions 
+
+Functions without return  
+Functions with return 
+Calling function through variable 
+Calling Anonymous function */ 
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script> 
+
+// This function shows an alert 
+
+function showAlert(){ 
+	 alert("Hello world!"); 
+} 
+	
+showAlert(); 
+
+</script> 
+
+<script> 
+
+// This function returns a value 
+
+function addOne(num){ 
+	 return num+1; 
+} 
+// We are assigning addOne to a variable 
+
+var plusOne = addOne; 
+
+// ...and calling the plusOne variable,  
+
+// storing the result to another variable 
+
+var result = plusOne(2); 
+
+//Using DOM to add elements 
+
+var h1 = document.createElement("H1") 
+
+h1.appendChild(document.createTextNode("Using Variable to call function: " + result)); 
+
+document.body.appendChild(h1); 
+
+</script> 
+
+
+<!-- Pre is used for preformatted text.  Not using this will not add new lines--> 
+
+<pre> 
+
+<script> 
+
+// This function is anonymous 
+
+(function(num){ 
+
+
+ return num+1; 
+
+
+}) 
+
+// Here is one way: 
+
+
+var f = function(num){ 
+ return num+1;  
+} 
+
+var result = f(1); 
+
+document.writeln("Calling Anonymous Function: " + result); 
+</script> 
+<pre> 
+</body>
+</html>
+
+
